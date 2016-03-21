@@ -1,0 +1,103 @@
+*{
+	padding:0;
+	margin:0;
+}
+h3{
+	text-align: center;
+	color:white;
+}
+.header{
+	width:1020px;
+	height:50px;
+	line-height: 50px;
+	background-color:#F44336;
+	margin:0 auto;
+}
+.content{
+	width:1020px;
+	height:500px;
+	margin:0 auto;
+}
+.content .left{
+	float:left;
+	width:20%;
+	height:100%;
+	line-height:500px;
+	background-color:#4CAF50;
+}
+.content .ngViewContainer{
+	float:right;
+	width:80%;
+	height:100%;
+}
+.content .ngViewContainer .right{
+	position:relative;
+	text-align: center;
+	width:100%;
+	height:100%;
+	transition:all .5s ease;
+	background-color:#607D8B;
+	top:0;
+	opacity:1;
+}
+.content .ngViewContainer .right.ng-enter{
+	top:50px;
+	opacity:0;
+}
+
+
+
+
+.animalList{
+	text-align:center;
+	list-style:none;
+}
+.animalList li{
+	height:100px;
+}
+.animalList li a{
+	text-decoration:none;
+	color:white;
+	font-size:2em;
+}
+
+.animalImg{
+	max-width:300px;
+	position:relative;
+	top:30px;
+	animation:imageTop 2.5s ease-in-out;
+	-webkit-animation:imageTop 2.5s ease-in-out;
+	-moz-animation:imageTop 2.5s ease-in-out;
+	-ms-animation:imageTop 2.5s ease-in-out;
+	-o-animation:imageTop 2.5s ease-in-out;	
+}
+@keyframes imageTop{
+	from{
+		top:60px;
+		opacity:0;
+	}
+	to{
+		top:30px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes imageTop{
+	from:{
+		top:60px;
+		opacity:0;
+	}
+	to:{
+		top:30px;
+		opacity: 1;
+	}
+}
+@-moz-keyframes imageTop{
+	from:{
+		top:60px;
+		opacity:0;
+	}
+	to:{
+		top:30px;
+		opacity: 1;
+	}
+}
